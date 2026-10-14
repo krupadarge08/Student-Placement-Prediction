@@ -1,4 +1,17 @@
 
+
+import sys
+import importlib.util
+import os
+
+print("PYTHON VERSION:", sys.version)
+print("JOBLIB FOUND:", importlib.util.find_spec("joblib"))
+print("REQUIREMENTS FILE EXISTS:", os.path.exists("requirements.txt"))
+
+if os.path.exists("requirements.txt"):
+    with open("requirements.txt", "r") as file:
+        print("REQUIREMENTS CONTENTS:", file.read())
+
 import streamlit as st
 import pandas as pd
 import joblib
