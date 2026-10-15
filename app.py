@@ -84,7 +84,7 @@ with st.form("placement_form"):
         "Work Experience", ["No", "Yes"]
     )
 
-    st.subheader("Other Details")
+   st.subheader("Employability & MBA Details")
 
     etest_p = st.number_input(
         "Employability Test Percentage",
